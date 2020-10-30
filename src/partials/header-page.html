@@ -1,41 +1,75 @@
 <header>
   <nav class="navigation">
-    <div class="mobile__header">
-      <a href="">
-        <img
-          class="logotype"
-          src="./images/header/logo-min.png"
-          srcset="
-            ./images/header/logo-min.png    1x,
-            ./images/header/logo@2x-min.png 2x
-          "
-          alt="logotype"
-          width="199"
-          height="50"
-        />
-      </a>
-      <button type="button" class="drop-menu__button" data-menu-button>
-        <svg class="drop-menu__svg" width="20" height="20">
+    <div class="tablet__header">
+      <div class="mobile__header">
+        <a href="">
+          <img
+            class="logotype"
+            src="./images/header/logo-min.png"
+            srcset="
+              ./images/header/logo-min.png    1x,
+              ./images/header/logo@2x-min.png 2x
+            "
+            alt="logotype"
+            width="199"
+            height="50"
+          />
+        </a>
+        <button type="button" class="drop-menu__button" data-menu-button>
+          <svg class="drop-menu__svg" width="20" height="20">
+            <use
+              href="./images/header/sprite__header.svg#icon-burger"
+              width="20"
+              height="12"
+              class="drop-menu__svg_burger"
+            ></use>
+            <use
+              href="./images/header/sprite__header.svg#icon-cross"
+              width="14"
+              height="14"
+              class="drop-menu__cvg_cross"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- <button type="button" class="drop-menu__order_header">
+        Buy now
+        <svg class="drop-menu__order_svg" width="10" height="10">
           <use
+            href="./images/header/sprite__header.svg#icon-vector"
+            width="8"
+            height="10"
+          ></use>
+        </svg>
+      </button> -->
+    </div>
+
+    <div class="drop-menu" data-menu>
+      <!-- <button type="button" class="drop-menu__button" data-menu-button>
+        <svg class="drop-menu__svg" width="20" height="20"> -->
+      <!-- <use
             href="./images/header/sprite__header.svg#icon-burger"
             width="20"
             height="12"
             class="drop-menu__svg_burger"
-          ></use>
-          <use
+          ></use> -->
+      <!-- <use
             href="./images/header/sprite__header.svg#icon-cross"
             width="14"
             height="14"
             class="drop-menu__cvg_cross"
           ></use>
         </svg>
-      </button>
-    </div>
-    <div class="drop-menu" data-menu>
+      </button> -->
       <button type="button" class="drop-menu__order">
         Buy now
-        <svg class="drop-menu__order_svg">
-          <use href="./images/hero/vector.svg" width="8" height="10"></use>
+        <svg class="drop-menu__order_svg" width="10" height="10">
+          <use
+            href="./images/header/sprite__header.svg#icon-vector"
+            width="8"
+            height="10"
+          ></use>
         </svg>
       </button>
       <ul class="mobile__list">
