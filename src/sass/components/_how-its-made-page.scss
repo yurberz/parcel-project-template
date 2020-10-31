@@ -34,19 +34,19 @@
   }
 }
 
-.made__btn {
-  width: 176px;
-  height: 44px;
-  background-color: #ffffff;
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
+// .made__btn {
+//   width: 176px;
+//   height: 44px;
+//   background-color: #ffffff;
+//   border-radius: 22px;
+//   border: none;
+//   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: #ecebeb;
+//   }
+// }
 
 .made__link {
   display: flex;
@@ -59,6 +59,18 @@
   align-items: center;
   text-align: center;
   color: #d41443;
+  width: 176px;
+
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
   &::after {
     margin-left: 20px;
@@ -127,9 +139,9 @@
 @media screen and (max-width: 767px) {
   .section-how-its-made {
     background-image: url(../images/how-its-made-page/spatter-mob.png);
+    background-position: 0% 52%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0% 52%;
   }
 
   @media (min-resolution: 2dppx) {
@@ -146,8 +158,12 @@
     padding-bottom: 38px;
   }
 
-  .made__btn {
+  .made__link {
     margin-bottom: 40px;
+  }
+
+  .made__right-side {
+    padding: 0 30px;
   }
 }
 
@@ -248,3 +264,59 @@
     }
   }
 }
+
+// GALLERY
+
+// .container.made {
+//   position: relative;
+// }
+// .gallery {
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   width: 100%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 97px;
+//   @media screen and (min-width: 320px) and (max-width: 767px) {
+//     max-width: 320px;
+//     min-height: 122px;
+//     bottom: -15%;
+//     background-image: url(../images/gallery-page/gallery-mobile.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(../images/gallery-page/gallery-mobile@2x.jpg);
+//     }
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     max-width: 768px;
+//     min-height: 264px;
+//     // margin-top: 140px;
+//     bottom: -50%;
+//     background-image: url(../images/gallery-page/gallery-tablet.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(../images/gallery-page/gallery-tablet@2x.jpg);
+//     }
+//   }
+//   @media screen and (min-width: 1280px) {
+//     max-width: 1280px;
+//     min-height: 430px;
+//     bottom: -60%;
+//     // margin-top: 139px;
+//     background-image: url(../images/gallery-page/gallery-desk.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(../images/gallery-page/gallery-desk@2x.jpg);
+//     }
+//   }
+// }
