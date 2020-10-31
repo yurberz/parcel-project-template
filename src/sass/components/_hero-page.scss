@@ -5,17 +5,13 @@
 .hero__slogan {
   margin-right: auto;
   font-family: Titan One;
-  font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-text-color;
   &_accent {
     font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     text-transform: uppercase;
-    color: #d41443;
+    color: $primary-title-accent-color;
   }
 }
 .hero__btn_product {
@@ -23,13 +19,14 @@
   font-family: DM Sans;
   font-style: normal;
   font-weight: 400;
-  color: #ffffff;
+  color: $white-text-color;
   justify-content: center;
   align-items: center;
 
-  background-color: #d41443;
+  background-color: $primary-title-accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #c7133e;
@@ -42,10 +39,11 @@
   font-weight: 400;
   justify-content: center;
   align-items: center;
-  color: #d41443;
+  color: $primary-title-accent-color;
 
-  background: #ffffff;
+  background: $white-text-color;
   border-radius: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
@@ -53,19 +51,19 @@
 }
 .hero__info {
   font-weight: normal;
-  color: #ffffff;
+  color: $white-text-color;
   &_accent {
     font-family: Titan One;
     font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $primary-title-accent-color;
   }
 }
 .hero__product {
   font-style: normal;
   font-weight: 400;
-  color: #ffffff;
+  color: $white-text-color;
 }
 
 // ===========MOBILE==ONLY====================
@@ -118,8 +116,6 @@
 // =====================TABLET===================================
 @media screen and (min-width: 768px) {
   .hero .container {
-    padding-right: 34px;
-    padding-left: 34px;
     padding-bottom: 34px;
   }
   .hero {
@@ -164,20 +160,46 @@
   }
 
   .hero__top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
+  // .ellips_top,
+  // .ellips_bottom {
+  //   display: block;
+  //   width: 16px;
+  //   height: 16px;
+  //   border-radius: 50%;
+  //   background-color: #ffffff;
+  //   // z-index: 1;
+  // }
+  // .ellips_top {
+  //   transform: translate(60px, -150px);
+  // }
   .hero__info {
     font-size: 14px;
     line-height: 1.286;
     text-align: right;
-    &_accent {
-      font-size: 46px;
-      line-height: 1.325;
-      text-align: end;
-    }
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   width: 16px;
+    //   height: 16px;
+    //   border-radius: 50%;
+    //   background-color: #ffffff;
+    //   top: 0;
+    //   right: 0;
+    //   transform: translate(60px, -70px);
+    // }
   }
+  .hero__info_accent {
+    font-size: 46px;
+    line-height: 1.325;
+    text-align: end;
+    z-index: 100;
+  }
+
   .hero__product {
     width: 114px;
     font-size: 8px;
@@ -196,8 +218,6 @@
 // ==================DESCTOP====================
 @media screen and (min-width: 1050px) {
   .hero .container {
-    padding-right: 49px;
-    padding-left: 49px;
     padding-bottom: 56px;
   }
   .hero {
@@ -254,7 +274,7 @@
     font-size: 14px;
     line-height: 1.43;
     margin-top: 102px;
-    margin-left: 112px;
+    margin-left: 295px;
     &_link {
       display: block;
       width: 26px;
