@@ -1,0 +1,285 @@
+.hero {
+  background-color: #ffb8ca;
+  background-repeat: no-repeat;
+}
+.hero__slogan {
+  margin-right: auto;
+  font-family: Titan One;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $white-text-color;
+  &_accent {
+    font-family: Titan One;
+    text-transform: uppercase;
+    color: $primary-title-accent-color;
+  }
+}
+.hero__btn_product {
+  display: inline-flex;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  color: $white-text-color;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $primary-title-accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+.hero__btn_how-to {
+  display: inline-flex;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  color: $primary-title-accent-color;
+
+  background: $white-text-color;
+  border-radius: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+.hero__info {
+  font-weight: normal;
+  color: $white-text-color;
+  &_accent {
+    font-family: Titan One;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-title-accent-color;
+  }
+}
+.hero__product {
+  font-style: normal;
+  font-weight: 400;
+  color: $white-text-color;
+}
+
+// ===========MOBILE==ONLY====================
+@media screen and (max-width: 767px) {
+  .hero__product,
+  .hero__info,
+  .hero__info_accent {
+    display: none;
+  }
+  .hero {
+    padding-top: 193px;
+    padding-bottom: 160px;
+    background-image: url(../images/hero/mobile-ice-min.png);
+    background-position: right top 83px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('../images/hero/mobile-ice@2x-min.png');
+    }
+  }
+  .hero__slogan {
+    max-width: 218px;
+    margin-bottom: 19px;
+    // margin-right: auto;
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+    &_accent {
+      font-size: 48px;
+      line-height: 0.965;
+    }
+  }
+  .hero__btn_product {
+    font-size: 8px;
+    line-height: 1.25;
+    min-width: 63px;
+    min-height: 24px;
+    margin-right: 8px;
+  }
+  .hero__btn_how-to {
+    font-size: 8px;
+    line-height: 1.25;
+    min-width: 82.8px;
+    min-height: 24px;
+  }
+}
+
+// =====================TABLET===================================
+@media screen and (min-width: 768px) {
+  .hero .container {
+    padding-bottom: 34px;
+  }
+  .hero {
+    background-image: url(../images/hero/tablet-girl-min.png),
+      url(../images/hero/tablet-ice-min.png),
+      url(../images/hero/tablet-milk-min.png);
+    background-size: 168px 133px, 324px 368px, 124px 126px;
+    background-position: right 34px bottom 0, right 137px bottom 0,
+      left 34px bottom 28px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero/tablet-girl@2x-min.png),
+        url(../images/hero/tablet-ice@2x-min.png),
+        url(../images/hero/tablet-milk@2x-min.png);
+    }
+  }
+
+  .hero__slogan {
+    max-width: 162px;
+    margin-bottom: 20px;
+    margin-top: 102px;
+    font-size: 22px;
+    line-height: 1.136;
+    &_accent {
+      font-size: 34px;
+      line-height: 0.905;
+    }
+  }
+  .hero__btn_product {
+    font-size: 8px;
+    line-height: 1.25;
+    min-width: 63px;
+    min-height: 24px;
+    margin-right: 9px;
+  }
+  .hero__btn_how-to {
+    font-size: 8px;
+    line-height: 1.25;
+    min-width: 82.8px;
+    min-height: 24px;
+  }
+
+  .hero__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  // .ellips_top,
+  // .ellips_bottom {
+  //   display: block;
+  //   width: 16px;
+  //   height: 16px;
+  //   border-radius: 50%;
+  //   background-color: #ffffff;
+  //   // z-index: 1;
+  // }
+  // .ellips_top {
+  //   transform: translate(60px, -150px);
+  // }
+  .hero__info {
+    font-size: 14px;
+    line-height: 1.286;
+    text-align: right;
+    // &::after {
+    //   content: '';
+    //   display: block;
+    //   width: 16px;
+    //   height: 16px;
+    //   border-radius: 50%;
+    //   background-color: #ffffff;
+    //   top: 0;
+    //   right: 0;
+    //   transform: translate(60px, -70px);
+    // }
+  }
+  .hero__info_accent {
+    font-size: 46px;
+    line-height: 1.325;
+    text-align: end;
+    z-index: 100;
+  }
+
+  .hero__product {
+    width: 114px;
+    font-size: 8px;
+    line-height: 1.5;
+    margin-top: 66px;
+    margin-left: 154px;
+    &_link {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-top: 7px;
+    }
+  }
+}
+
+// ==================DESCTOP====================
+@media screen and (min-width: 1050px) {
+  .hero .container {
+    padding-bottom: 56px;
+  }
+  .hero {
+    background-image: url(../images/hero/desctop-girl-min.png),
+      url(../images/hero/desctop-ice-min.png),
+      url(../images/hero/desctop-milk-min.png);
+    background-size: 293px 232px, 538px 613px, 188px 191px;
+    background-position: right 109px bottom 0, right 207px bottom 0,
+      left 77px bottom 45px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero/desctop-girl@2x-min.png),
+        url(../images/hero/desctop-ice@2x-min.png),
+        url(../images/hero/desctop-milk@2x-min.png);
+    }
+  }
+  .hero__slogan {
+    max-width: 277px;
+    margin-bottom: 25px;
+    margin-top: 171px;
+    font-size: 38px;
+    line-height: 1.158;
+    &_accent {
+      font-size: 58px;
+      line-height: 0.905;
+    }
+  }
+  .hero__btn_product {
+    font-size: 14px;
+    line-height: 1.286;
+    min-width: 102px;
+    min-height: 40px;
+    margin-right: 17px;
+  }
+  .hero__btn_how-to {
+    font-size: 14px;
+    line-height: 1.286;
+    min-width: 138px;
+    min-height: 40px;
+  }
+  .hero__info {
+    font-size: 14px;
+    line-height: 1.286;
+    text-align: right;
+    &_accent {
+      font-size: 46px;
+      line-height: 1.152;
+      text-align: end;
+    }
+  }
+  .hero__product {
+    width: 200px;
+    font-size: 14px;
+    line-height: 1.43;
+    margin-top: 102px;
+    margin-left: 295px;
+    &_link {
+      display: block;
+      width: 26px;
+      height: 26px;
+      margin-top: 20px;
+    }
+  }
+}
