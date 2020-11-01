@@ -26,12 +26,14 @@
   background-color: $primary-title-accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #c7133e;
   }
 }
+
 .hero__btn_how-to {
   display: inline-flex;
   font-family: DM Sans;
@@ -44,11 +46,13 @@
   background: $white-text-color;
   border-radius: 20px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
 }
+
 .hero__info {
   font-weight: normal;
   color: $white-text-color;
@@ -137,7 +141,7 @@
   .hero__slogan {
     max-width: 162px;
     margin-bottom: 20px;
-    margin-top: 102px;
+    margin-top: 105px;
     font-size: 22px;
     line-height: 1.136;
     &_accent {
@@ -151,6 +155,13 @@
     min-width: 63px;
     min-height: 24px;
     margin-right: 9px;
+
+    // cursor: pointer;
+    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // &:hover,
+    // &:focus {
+    //   background-color: #c7133e;
+    // }
   }
   .hero__btn_how-to {
     font-size: 8px;
@@ -160,57 +171,52 @@
   }
 
   .hero__top {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    width: 100%;
   }
-  // .ellips_top,
-  // .ellips_bottom {
-  //   display: block;
-  //   width: 16px;
-  //   height: 16px;
-  //   border-radius: 50%;
-  //   background-color: #ffffff;
-  //   // z-index: 1;
-  // }
-  // .ellips_top {
-  //   transform: translate(60px, -150px);
-  // }
+
   .hero__info {
     font-size: 14px;
     line-height: 1.286;
     text-align: right;
-    // &::after {
-    //   content: '';
-    //   display: block;
-    //   width: 16px;
-    //   height: 16px;
-    //   border-radius: 50%;
-    //   background-color: #ffffff;
-    //   top: 0;
-    //   right: 0;
-    //   transform: translate(60px, -70px);
-    // }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
   .hero__info_accent {
-    font-size: 46px;
-    line-height: 1.325;
+    position: relative;
+    font-size: 28px;
+    line-height: 1.143;
     text-align: end;
-    z-index: 100;
+    z-index: 5;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      top: -1px;
+      right: -7px;
+      z-index: -1;
+    }
   }
 
   .hero__product {
     width: 114px;
     font-size: 8px;
-    line-height: 1.5;
+    line-height: 1.25;
     margin-top: 66px;
-    margin-left: 154px;
+    margin-left: 120px;
     &_link {
       display: block;
       width: 20px;
       height: 20px;
       margin-top: 7px;
+      cursor: pointer;
     }
   }
 }
@@ -225,7 +231,7 @@
       url(../images/hero/desctop-ice-min.png),
       url(../images/hero/desctop-milk-min.png);
     background-size: 293px 232px, 538px 613px, 188px 191px;
-    background-position: right 109px bottom 0, right 207px bottom 0,
+    background-position: right 109px bottom 0, right 267px bottom 0,
       left 77px bottom 45px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -251,35 +257,61 @@
     line-height: 1.286;
     min-width: 102px;
     min-height: 40px;
-    margin-right: 17px;
+    margin-right: 15px;
+
+    // cursor: pointer;
+    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // &:hover,
+    // &:focus {
+    //   background-color: #c7133e;
+    // }
   }
   .hero__btn_how-to {
     font-size: 14px;
     line-height: 1.286;
     min-width: 138px;
     min-height: 40px;
+    // cursor: pointer;
   }
   .hero__info {
     font-size: 14px;
     line-height: 1.286;
     text-align: right;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
     &_accent {
+      position: relative;
+      z-index: 5;
       font-size: 46px;
       line-height: 1.152;
       text-align: end;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        top: -7px;
+        right: -15px;
+        z-index: -1;
+      }
     }
   }
   .hero__product {
     width: 200px;
     font-size: 14px;
     line-height: 1.43;
-    margin-top: 102px;
-    margin-left: 295px;
+    margin-top: 112px;
+    margin-left: 180px;
     &_link {
       display: block;
       width: 26px;
       height: 26px;
       margin-top: 20px;
+      cursor: pointer;
     }
   }
 }
