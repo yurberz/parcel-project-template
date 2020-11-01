@@ -11,6 +11,10 @@
     line-height: 1.667;
     color: $secondary-title-color;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
     @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 1.333;
@@ -44,6 +48,12 @@
   }
   h2 {
     margin-bottom: 140px;
+    @media screen and (max-width: 768px) {
+      font-size: 34px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 260px;
@@ -65,8 +75,11 @@
     margin-left: auto;
     margin-right: auto;
     text-transform: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 14px;
+      line-height: 1.52;
+    }
+    @media screen and (max-width: 768px) {
       line-height: 1.76;
     }
     @media screen and (min-width: 1280px) {
@@ -86,7 +99,7 @@
 
   &__item {
     display: block;
-    height: 450px;
+    height: 485px;
     text-align: center;
     border-radius: 24px;
     position: relative;
@@ -151,7 +164,7 @@
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(40px);
+    transform: translateY(30px);
     @media screen and (min-width: 768px) {
       transform: translateY(30px);
     }
