@@ -1,5 +1,16 @@
 .locations {
     background: #FFF5F6;
+    padding-bottom: 113px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 165px;
+    }
+    &__button {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 196px;
+            margin-right: 196px;
+        }
+    }
     &__store {
         position: relative;
         margin-left: auto;
@@ -18,6 +29,10 @@
         border-radius: 22px;
         border: 1px solid transparent;
         cursor: pointer;
+        @media screen and (min-width: 768px) {
+            margin-right: 14.5px;
+            margin-bottom: 0;
+        }
         &__svg {
             width: 3.61px;
             height: 8px;
@@ -28,7 +43,6 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 113px;
         padding-left: 32px;
         font-weight: bold;
         font-size: 16px;
@@ -50,6 +64,13 @@
     }
 }
 
+.locations__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-bottom: 81px;
+    }
+}
+
 .locations__item {
     position: relative;
     height: 427px;
@@ -57,14 +78,29 @@
     margin-bottom: 20px;
     margin-right: 35px;
     margin-left: 35px;
-    &:last-child {
-        margin-bottom: 54px;
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 54px;
+        }
     }
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 544px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        margin-left: 0;
+    }
+    @media screen and (min-width:1200px) {
+        width: 330px;
+        height: 572px;
+    }
     &__title {
-        position: absolute;
         margin: 43px 120px 25px 20px;
         padding-left: 25px;
         padding-right: 25px;
@@ -80,8 +116,24 @@
         color: $white-text-color;
         background: $yellow-bg-color;
         border-radius: 4px;
-        &__accent {
+        @media screen and (max-width: 767px) {
             position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 50px 116px 30px 31px;
+            width: 73px;
+            height: 28px;
+            font-size: 16px;
+        }
+        @media screen and (min-width:1200px) {
+            margin: 51px 214px 32px 43px;
+        }
+        &__accent {
+            @media screen and (max-width: 767px) {
+                position: absolute;
+            }
             margin: 43px 70px 25px 20px;
             padding-left: 25px;
             padding-right: 25px;
@@ -96,10 +148,20 @@
             background: $green-bg-color;
             border-radius: 4px;
             width: 130px;
+            @media screen and (min-width: 768px) {
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 50px 50px 30px 31px;
+                width: 138px;
+                height: 28px;
+                font-size: 16px;
+            }
+            @media screen and (min-width:1200px) {
+                margin: 52px 149px 32px 43px;
+            }
         }
     }
     &__city-first {
-        position: absolute;
         top: 84px;
         padding-left: 20px;
         margin-bottom: 10px;
@@ -111,9 +173,17 @@
         letter-spacing: 0.04em;
         color: $primary-text-color;
         font-style: normal;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            padding-left: 31px;
+            padding-right: 131px;
+            margin-bottom: 14px;
+        }
     }
     &__city-second {
-        position: absolute;
         top: 84px;
         padding-left: 20px;
         margin-bottom: 10px;
@@ -124,9 +194,17 @@
         line-height: 186%;
         letter-spacing: 0.04em;
         color: $primary-text-color;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            padding-left: 31px;
+            padding-right: 104px;
+            margin-bottom: 14px;
+        }
     }
     &__city-third {
-        position: absolute;
         top: 84px;
         padding-left: 20px;
         margin-bottom: 10px;
@@ -137,9 +215,18 @@
         line-height: 186%;
         letter-spacing: 0.04em;
         color: $primary-text-color;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            height: 26px;
+            font-size: 14px;
+            padding-left: 31px;
+            padding-right: 124px;
+            margin-bottom: 14px;
+        }
     }
     &__description {
-        position: absolute;
         box-sizing: content-box;
         top: 116px;
         padding-right: 21px;
@@ -150,9 +237,18 @@
         font-size: 12px;
         line-height: 1.5;
         color: $grey-text-color;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 30px;
+            padding-right: 44px;
+            padding-left: 31px;
+            width: 145px;
+        }
     }
     &__workdays {
-        position: absolute;
         box-sizing: content-box;
         top: 202px;
         padding-right: 93px;
@@ -162,18 +258,35 @@
         font-size: 12px;
         line-height: 186%;
         color: $primary-text-color;
-        &__schedule {
+        @media screen and (max-width: 767px) {
             position: absolute;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            padding-right: 80px;
+            padding-left: 31px;
+            margin-top: 30px;
+            width: 109px;
+        }
+        &__schedule {
             box-sizing: content-box;
             top: 222px;
             width: 162px;
             // margin-top: 18px;
             padding-left: 20px;
             padding-right: 38px;
+            @media screen and (max-width: 767px) {
+                position: absolute;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                padding-left: 31px;
+                padding-right: 47px;
+                margin-bottom: 16px;
+            }
         }
     }
     &__weekend {
-        position: absolute;
         box-sizing: content-box;
         top: 250px;
         margin-top: 10px;
@@ -184,8 +297,17 @@
         font-size: 12px;
         line-height: 186%;
         color: $primary-text-color;
-        &__schedule {
+        @media screen and (max-width: 767px) {
             position: absolute;
+        }
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            width: 124px;
+            height: 26px;
+            padding-right: 65px;
+            padding-left: 31px;
+        }
+        &__schedule {
             box-sizing: content-box;
             top: 275px;
             width: 138px;
@@ -193,15 +315,33 @@
             margin-bottom: 25px;
             padding-left: 20px;
             padding-right: 62px;
+            @media screen and (max-width: 767px) {
+                position: absolute;
+            }
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+                padding-left: 31px;
+                padding-right: 48px;
+                margin-bottom: 30px;
+            }
         }
     }
     &__contacts {
-        position: absolute;
         box-sizing: content-box;
         top: 347px;
         padding-right: 20px;
         padding-left: 21px;
         margin-bottom: 43px;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+        @media screen and (min-width:768px) {
+            padding-right: 32px;
+            padding-left: 31px;
+            margin-bottom: 50px;
+            font-size: 14px;
+            line-height: 1.83;
+        }
     }
     &__time {
         font-weight: 500;
@@ -220,7 +360,6 @@
 }
 
 .line-first {
-    position: absolute;
     right: 0;
     left: 0;
     margin-left: 20px;
@@ -228,10 +367,12 @@
     height: 0px;
     top: 177px;
     border: 1px solid #E1E1E1;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+    }
 }
 
 .line-second {
-    position: absolute;
     height: 0px;
     left: 0;
     right: 0;
@@ -240,4 +381,7 @@
     margin-bottom: 25px;
     top: 322px;
     border: 1px solid #E1E1E1;
+    @media screen and (max-width: 767px) {
+        position: absolute;
+    }
 }
