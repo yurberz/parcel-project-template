@@ -1,39 +1,24 @@
-// ==============MAIN=RULES====================
+// ============COMMON RULES======================
 header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
-
-.logotype {
+.logotyp {
   width: 199px;
-  height: 50px;
+  height: 50;
 }
-.drop-menu__item,
-.menu__list {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
-  color: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: #d41443;
-  }
-}
-
-.drop-menu__order,
-.drop-menu__order_header {
+.drop-menu__order_btn,
+.top-menu__order_btn {
+  cursor: pointer;
+  margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 23px auto 19px auto;
-  display: block;
   border: none;
   outline: none;
-  width: 186px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
@@ -43,86 +28,38 @@ header {
   line-height: 1.132;
   text-align: center;
   color: #d41443;
-  &_svg {
-    margin-left: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
-
-// ================MOBILE=======================
-@media screen and (max-width: 549px) {
-  .mobile__header {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logotype {
-    margin-top: 6px;
-  }
-
-  .drop-menu__order_header {
-    display: none;
-  }
-}
-@media screen and (min-width: 550px) {
-  .mobile__header {
-    max-width: 550px;
-  }
-  .logotype {
-    margin-top: 6px;
-  }
-  .drop-menu__order_header {
-    display: none;
-  }
-}
-
-// ============DROP_MENU==========================
 .drop-menu {
   display: none;
   &.is-open {
     display: block;
   }
 }
-header .container {
-  position: relative;
-}
-.drop-menu__button {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  display: block;
-  top: 20px;
-  right: 20px;
-  z-index: 100;
-}
-
 .drop-menu__button .drop-menu__svg_cross {
   display: none;
 }
-
 .drop-menu__button.is-open .drop-menu__svg_cross {
   display: block;
 }
-
 .drop-menu__button.is-open .drop-menu__svg_burger {
   display: none;
 }
-
 .drop-menu {
   background-color: #e17992;
   width: 100%;
   height: 100vh;
   padding-top: 23px;
   padding-left: 20px;
+  padding-right: 20px;
   position: absolute;
-  top: -6px;
+  top: 0;
   left: 0;
+  z-index: 7;
 }
 .drop-menu__item {
   display: block;
@@ -131,57 +68,129 @@ header .container {
   border-bottom: 1px solid #e18298;
 
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.302;
   display: flex;
   align-items: center;
+  color: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+  // &:first-child {
+  //   color: #d41443;
+  // }
 }
-
-// =================================================
-
-// ===============TABLET=====================
-@media screen and (min-width: 768px) {
-  .tablet-header {
-    width: 768px;
+.drop-menu__order_btn {
+  width: 209px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+// =====================MOBILE===================================
+@media screen and (max-width: 767px) {
+  header .container {
+    position: relative;
+  }
+  .top-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .mobile-header {
-    width: 511px;
-    display: flex;
-  }
-  .drop-menu__order_header {
-    display: block;
-    width: 160px;
-    height: 44px;
+    margin-top: 6px;
   }
 
-  .logotype {
-    margin-top: 37px;
+  .top-menu__list,
+  .top-menu__order_btn {
+    display: none;
+  }
+  .drop-menu__button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+  }
+  .drop-menu {
+    top: -7px;
   }
 }
-
-// ================DESCTOP==================
-@media screen and (min-width: 1050px) {
+// =================TABLET===========================
+@media screen and (min-width: 768px) {
+  header .container {
+    position: relative;
+  }
+  .top-menu__list {
+    display: none;
+  }
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 37px;
+  }
+  .drop-menu__button {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 10;
+  }
+  .top-menu__order_btn {
+    width: 160px;
+  }
+  .drop-menu {
+    position: relative;
+    width: 290px;
+    top: -87px;
+    left: 450px;
+    height: 397px;
+  }
+}
+// ================DESCTOP========================
+@media screen and (min-width: 1280px) {
   .drop-menu__button {
     display: none;
   }
-  .drop-menu__order_header {
-    margin: 0;
+  .logotyp {
+    margin-left: -69px;
   }
-  .logotype {
-    margin-top: 37px;
-  }
-  .menu__list {
+  .top-menu__list {
     display: flex;
-    width: 541px;
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.312;
+    line-height: 21px;
+    color: #ffffff;
   }
-  .tablet-header {
+  .top-menu__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  .top-menu__item:first-child {
+    color: #d41443;
+  }
+  .top-menu__item {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+  .top-menu {
+    display: flex;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
 }
