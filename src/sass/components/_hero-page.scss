@@ -145,11 +145,13 @@
         url(../images/hero/tablet-milk@2x-min.png);
     }
   }
-
+  .hero__top {
+    padding-top: 105px;
+  }
   .hero__slogan {
     max-width: 162px;
     margin-bottom: 20px;
-    margin-top: 105px;
+    // margin-top: 105px;
     font-size: 22px;
     line-height: 1.137;
     letter-spacing: 0.04em;
@@ -245,10 +247,13 @@
         url(../images/hero/desctop-milk@2x-min.png);
     }
   }
+  .hero__top {
+    padding-top: 171gipx;
+  }
   .hero__slogan {
     max-width: 277px;
     margin-bottom: 25px;
-    margin-top: 171px;
+    // margin-top: 171px;
     font-size: 38px;
     line-height: 1.158;
     &_accent {
