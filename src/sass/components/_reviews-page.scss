@@ -1,3 +1,13 @@
+.reviews-page {
+  @media screen and (max-width: 479px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 80px;
+  }
+}
+
 .reviews {
   padding-top: 155px;
   padding-bottom: 210px;
