@@ -557,6 +557,7 @@ header {
   }
   .drop-menu {
     top: -7px;
+    height: 502px;
   }
 }
 
@@ -599,7 +600,7 @@ header {
     width: 280px;
     top: -37px;
     left: 490px;
-    height: 399px;
+    height: 404px;
   }
 }
 
@@ -809,10 +810,12 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .hero__top {
+    padding-top: 105px;
+  }
   .hero__slogan {
     max-width: 162px;
     margin-bottom: 20px;
-    margin-top: 105px;
     font-size: 22px;
     line-height: 1.137;
     letter-spacing: 0.04em;
@@ -908,10 +911,12 @@ header {
 }
 
 @media screen and (min-width: 1280px) {
+  .hero__top {
+    padding-top: 171gipx;
+  }
   .hero__slogan {
     max-width: 277px;
     margin-bottom: 25px;
-    margin-top: 171px;
     font-size: 38px;
     line-height: 1.158;
   }
@@ -2131,17 +2136,14 @@ header {
   top: 84px;
   padding-left: 20px;
   margin-bottom: 10px;
-  height: 22px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
   letter-spacing: 0.04em;
   color: #000000;
 }
 
 @media screen and (min-width: 768px) {
   .locations__item__city-third {
-    height: 26px;
     font-size: 14px;
     padding-left: 31px;
     margin-bottom: 14px;
@@ -2398,7 +2400,6 @@ header {
   left: 0;
   margin-left: 20px;
   margin-right: 21px;
-  height: 0px;
   top: 177px;
   border: 1px solid #E1E1E1;
 }
@@ -2407,6 +2408,8 @@ header {
   .line-first {
     padding-left: 31px;
     padding-right: 32px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -2435,6 +2438,7 @@ header {
     padding-left: 43px;
     padding-right: 53px;
     margin-bottom: 30px;
+    margin-left: 30px;
     width: 157px;
   }
 }
