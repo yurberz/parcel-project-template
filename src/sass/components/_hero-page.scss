@@ -14,6 +14,29 @@
     color: $primary-title-accent-color;
   }
 }
+// .product_link {
+//   // display: block;
+//   font-family: DM Sans;
+//   font-style: normal;
+//   font-weight: 400;
+//   color: $white-text-color;
+//   background-color: $primary-title-accent-color;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 20px;
+//   &:hover,
+//   &:focus {
+//     background-color: #c7133e;
+//   }
+// }
+// .hero__btn_product {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.hero__btn {
+  display: flex;
+}
+
 .hero__btn_product {
   display: inline-flex;
   font-family: DM Sans;
@@ -93,7 +116,6 @@
   .hero__slogan {
     max-width: 218px;
     margin-bottom: 19px;
-    // margin-right: auto;
     font-size: 26px;
     line-height: 1.154;
     letter-spacing: 0.04em;
@@ -102,12 +124,15 @@
       line-height: 0.965;
     }
   }
+  // .product_link {
   .hero__btn_product {
     font-size: 8px;
     line-height: 1.25;
     min-width: 63px;
     min-height: 24px;
     margin-right: 8px;
+    text-align: center;
+    // align-self: center;
   }
   .hero__btn_how-to {
     font-size: 8px;
@@ -155,19 +180,28 @@
     min-width: 63px;
     min-height: 24px;
     margin-right: 9px;
-
-    // cursor: pointer;
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // &:hover,
-    // &:focus {
-    //   background-color: #c7133e;
-    // }
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
+  // .product_link:hover .hero__btn_product {
+  //   background-color: #c7133e;
+  // }
+
   .hero__btn_how-to {
     font-size: 8px;
     line-height: 1.25;
     min-width: 82.8px;
     min-height: 24px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
 
   .hero__top {
