@@ -184,16 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/hero/mobile-ice-min.png":[["mobile-ice-min.1eeafb47.png","images/hero/mobile-ice-min.png"],"images/hero/mobile-ice-min.png"],"./../images/hero/mobile-ice@2x-min.png":[["mobile-ice@2x-min.a846eb52.png","images/hero/mobile-ice@2x-min.png"],"images/hero/mobile-ice@2x-min.png"],"./../images/hero/tablet-girl-min.png":[["tablet-girl-min.ac3bed08.png","images/hero/tablet-girl-min.png"],"images/hero/tablet-girl-min.png"],"./../images/hero/tablet-ice-min.png":[["tablet-ice-min.8239fc61.png","images/hero/tablet-ice-min.png"],"images/hero/tablet-ice-min.png"],"./../images/hero/tablet-milk-min.png":[["tablet-milk-min.61883f82.png","images/hero/tablet-milk-min.png"],"images/hero/tablet-milk-min.png"],"./../images/hero/tablet-girl@2x-min.png":[["tablet-girl@2x-min.4ec20bf9.png","images/hero/tablet-girl@2x-min.png"],"images/hero/tablet-girl@2x-min.png"],"./../images/hero/tablet-ice@2x-min.png":[["tablet-ice@2x-min.77d1d7e0.png","images/hero/tablet-ice@2x-min.png"],"images/hero/tablet-ice@2x-min.png"],"./../images/hero/tablet-milk@2x-min.png":[["tablet-milk@2x-min.e3f92cc2.png","images/hero/tablet-milk@2x-min.png"],"images/hero/tablet-milk@2x-min.png"],"./../images/hero/desctop-girl-min.png":[["desctop-girl-min.ca79a037.png","images/hero/desctop-girl-min.png"],"images/hero/desctop-girl-min.png"],"./../images/hero/desctop-ice-min.png":[["desctop-ice-min.fc65544d.png","images/hero/desctop-ice-min.png"],"images/hero/desctop-ice-min.png"],"./../images/hero/desctop-milk-min.png":[["desctop-milk-min.f9302020.png","images/hero/desctop-milk-min.png"],"images/hero/desctop-milk-min.png"],"./../images/hero/desctop-girl@2x-min.png":[["desctop-girl@2x-min.9432bdd0.png","images/hero/desctop-girl@2x-min.png"],"images/hero/desctop-girl@2x-min.png"],"./../images/hero/desctop-ice@2x-min.png":[["desctop-ice@2x-min.4ac27a10.png","images/hero/desctop-ice@2x-min.png"],"images/hero/desctop-ice@2x-min.png"],"./../images/hero/desctop-milk@2x-min.png":[["desctop-milk@2x-min.cbb10b6f.png","images/hero/desctop-milk@2x-min.png"],"images/hero/desctop-milk@2x-min.png"],"./../images/products-page/circle.png":[["circle.a5bb3742.png","images/products-page/circle.png"],"images/products-page/circle.png"],"./../images/products-page/arrow.png":[["arrow.21ca61ea.png","images/products-page/arrow.png"],"images/products-page/arrow.png"],"./../images/how-its-made-page/arrow.svg":[["arrow.7a234772.svg","images/how-its-made-page/arrow.svg"],"images/how-its-made-page/arrow.svg"],"./../images/how-its-made-page/icon1.svg":[["icon1.75efe156.svg","images/how-its-made-page/icon1.svg"],"images/how-its-made-page/icon1.svg"],"./../images/how-its-made-page/icon2.svg":[["icon2.267a0e75.svg","images/how-its-made-page/icon2.svg"],"images/how-its-made-page/icon2.svg"],"./../images/how-its-made-page/icon3.svg":[["icon3.a93626a6.svg","images/how-its-made-page/icon3.svg"],"images/how-its-made-page/icon3.svg"],"./../images/how-its-made-page/spatter-mob.png":[["spatter-mob.5f4691a0.png","images/how-its-made-page/spatter-mob.png"],"images/how-its-made-page/spatter-mob.png"],"./../images/how-its-made-page/spatter-mob@2x.png":[["spatter-mob@2x.cdf3363f.png","images/how-its-made-page/spatter-mob@2x.png"],"images/how-its-made-page/spatter-mob@2x.png"],"./../images/how-its-made-page/spatter-desktop.png":[["spatter-desktop.ba625148.png","images/how-its-made-page/spatter-desktop.png"],"images/how-its-made-page/spatter-desktop.png"],"./../images/how-its-made-page/spatter-desktop@2x.png":[["spatter-desktop@2x.10104302.png","images/how-its-made-page/spatter-desktop@2x.png"],"images/how-its-made-page/spatter-desktop@2x.png"],"./../images/gallery-page/gallery-tablet.jpg":[["gallery-tablet.9eaa9852.jpg","images/gallery-page/gallery-tablet.jpg"],"images/gallery-page/gallery-tablet.jpg"],"./../images/gallery-page/gallery-tablet@2x.jpg":[["gallery-tablet@2x.f38aedc1.jpg","images/gallery-page/gallery-tablet@2x.jpg"],"images/gallery-page/gallery-tablet@2x.jpg"],"./../images/gallery-page/gallery-desk.jpg":[["gallery-desk.38086934.jpg","images/gallery-page/gallery-desk.jpg"],"images/gallery-page/gallery-desk.jpg"],"./../images/gallery-page/gallery-desk@2x.jpg":[["gallery-desk@2x.314e1d65.jpg","images/gallery-page/gallery-desk@2x.jpg"],"images/gallery-page/gallery-desk@2x.jpg"],"./../images/gallery-page/gallery-mobile.jpg":[["gallery-mobile.d53ca4ce.jpg","images/gallery-page/gallery-mobile.jpg"],"images/gallery-page/gallery-mobile.jpg"],"./../images/gallery-page/gallery-mobile@2x.jpg":[["gallery-mobile@2x.d19b6ee9.jpg","images/gallery-page/gallery-mobile@2x.jpg"],"images/gallery-page/gallery-mobile@2x.jpg"],"./../images/reviews/item1.png":[["item1.04cc6ca7.png","images/reviews/item1.png"],"images/reviews/item1.png"],"./../images/reviews/item3.png":[["item3.802df7fd.png","images/reviews/item3.png"],"images/reviews/item3.png"],"./../images/reviews/item2.png":[["item2.bdb2743c.png","images/reviews/item2.png"],"images/reviews/item2.png"],"./../images/locations/dropplets.png":[["dropplets.9ba9d07b.png","images/locations/dropplets.png"],"images/locations/dropplets.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64637" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65453" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -397,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.521f9405.js.map
