@@ -157,6 +157,10 @@
     }
   }
 
+  .made__title {
+    font-size: 34px;
+  }
+
   .made__img-cow {
     margin-bottom: 46px;
   }
@@ -182,6 +186,10 @@
   }
 
   .made {
+    &__subtitle {
+      font-size: 26px;
+    }
+
     &__title {
       margin-bottom: 100px;
     }
@@ -203,6 +211,14 @@
     &__text-bottom {
       margin-bottom: 60px;
     }
+
+    &__link {
+      font-size: 16px;
+
+      &::after {
+        margin-left: 13px;
+      }
+    }
   }
 
   .cost {
@@ -220,6 +236,10 @@
       margin-bottom: 13px;
     }
   }
+
+  .cost .cost__num {
+    font-size: 48px;
+  }
 }
 
 //DESKTOP
@@ -231,7 +251,7 @@
     background-image: url(../images/how-its-made-page/spatter-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 0% 50%;
+    background-position: 0% 40%;
   }
 
   @media (min-resolution: 2dppx) {
@@ -241,6 +261,9 @@
   }
 
   .made {
+    &__subtitle {
+      font-size: 30px;
+    }
     &__wrapper {
       margin-bottom: 40px;
     }
@@ -271,6 +294,10 @@
       letter-spacing: 0.02em;
     }
   }
+
+  .cost .cost__num {
+    font-size: 58px;
+  }
 }
 
 // GALLERY
@@ -299,7 +326,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: -45%;
+    bottom: -43.7%;
     min-width: 768px;
     min-height: 264px;
     background-image: url(../images/gallery-page/gallery-tablet.jpg);
@@ -314,7 +341,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    bottom: -60%;
+    bottom: -57.3%;
     min-width: 1280px;
     min-height: 430px;
     background-image: url(../images/gallery-page/gallery-desk.jpg);
