@@ -72,7 +72,6 @@
     background-color: #ecebeb;
   }
 
-
   &::after {
     margin-left: 20px;
     content: '';
@@ -137,6 +136,13 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-how-its-made {
+    padding-top: 125px;
+    padding-bottom: 160px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section-how-its-made {
     background-image: url(../images/how-its-made-page/spatter-mob.png);
@@ -172,7 +178,7 @@
 @media screen and (min-width: 768px) {
   .section-how-its-made {
     padding-top: 130px;
-    padding-bottom: 140px;
+    padding-bottom: 231px;
   }
 
   .made {
@@ -220,6 +226,7 @@
 @media screen and (min-width: 1280px) {
   .section-how-its-made {
     padding-top: 125px;
+    padding-bottom: 293px;
 
     background-image: url(../images/how-its-made-page/spatter-desktop.png);
     background-repeat: no-repeat;
@@ -358,7 +365,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+    min-width: 1280px;
     min-height: 430px;
     bottom: -60%;
     // margin-top: 139px;
