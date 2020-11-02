@@ -4,13 +4,19 @@
     @media screen and (min-width: 768px) {
         padding-bottom: 165px;
     }
+    @media screen and (min-width:1280px) {
+        background-image: url(../images/locations/dropplets.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0% 16%;
+    }
     &__button {
         @media screen and (min-width: 768px) {
             display: flex;
             margin-left: 196px;
             margin-right: 196px;
         }
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             width: 393px;
             margin-left: 330px;
             margin-right: 330px;
@@ -285,6 +291,7 @@
             padding-left: 31px;
             padding-right: 124px;
             margin-bottom: 14px;
+            width: 65px;
         }
         @media screen and (min-width:1200px) {
             font-size: 16px;
@@ -414,6 +421,7 @@
             }
             @media screen and (min-width:768px) {
                 width: 141px;
+                padding-left: 31px;
             }
             @media screen and (min-width:1200px) {
                 font-size: 16px;
@@ -453,6 +461,7 @@
         line-height: 186%;
         color: $secondary-title-color;
         @media screen and (min-width: 768px) {
+            width: 141px;
             font-size: 14px;
             margin-bottom: 30px;
         }
