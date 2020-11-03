@@ -5,7 +5,6 @@
 .made {
   &__subtitle {
     margin-bottom: 15px;
-
     font-family: Titan One;
     font-size: 18px;
     line-height: 1.67;
@@ -300,14 +299,14 @@
     bottom: -20%;
     min-width: 480px;
     min-height: 200px;
-    background-image: url(../images/gallery-page/gallery-tablet.jpg);
+    background-image: url(../images/gallery-page/gallery-tablet.png);
     background-size: cover;
     background-position: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/gallery-page/gallery-tablet@2x.jpg);
+      background-image: url(../images/gallery-page/gallery-tablet@2x.png);
     }
   }
 
@@ -315,14 +314,14 @@
     bottom: -43.7%;
     min-width: 768px;
     min-height: 264px;
-    background-image: url(../images/gallery-page/gallery-tablet.jpg);
+    background-image: url(../images/gallery-page/gallery-tablet.png);
     background-size: cover;
     background-position: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/gallery-page/gallery-tablet@2x.jpg);
+      background-image: url(../images/gallery-page/gallery-tablet@2x.png);
     }
   }
 
@@ -330,14 +329,14 @@
     bottom: -57.3%;
     min-width: 1280px;
     min-height: 430px;
-    background-image: url(../images/gallery-page/gallery-desk.jpg);
+    background-image: url(../images/gallery-page/gallery-desk.png);
     background-size: cover;
     background-position: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/gallery-page/gallery-desk@2x.jpg);
+      background-image: url(../images/gallery-page/gallery-desk@2x.png);
     }
   }
 
@@ -345,14 +344,14 @@
     bottom: -15%;
     min-width: 320px;
     height: 122px;
-    background-image: url(../images/gallery-page/gallery-mobile.jpg);
+    background-image: url(../images/gallery-page/gallery-mobile.png);
     background-size: cover;
     background-position: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/gallery-page/gallery-mobile@2x.jpg);
+      background-image: url(../images/gallery-page/gallery-mobile@2x.png);
     }
   }
 }
