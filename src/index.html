@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICECREAM</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/logo-favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ICECREAM</title>
-  <link rel="shortcut icon" type="image/png" href="./images/logo-favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-  <!-- <include src="./partials/example.html"></include> -->
-  <include src="./partials/header-page.html"></include>
-  <main>
-    <include src="./partials/hero-page.html"></include>
-    <include src="./partials/products-page.html"></include>
-    <include src="./partials/how-its-made-page.html"></include>
-    <include src="./partials/reviews-page.html"></include>
-    <include src="./partials/locations-page.html"></include>
-  </main>
-  <include src="./partials/footer-page.html"></include>
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/header-page.html"></include>
+    <main>
+      <include src="./partials/hero-page.html"></include>
+      <include src="./partials/products-page.html"></include>
+      <include src="./partials/how-its-made-page.html"></include>
+      <!-- <include src="./partials/reviews-page.html"></include> -->
+      <include src="./partials/slider.html"></include>
+      <include src="./partials/locations-page.html"></include>
+    </main>
+    <include src="./partials/footer-page.html"></include>
 
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script src="./js/scrip.js"></script>
-  <script src="./index.js"></script>
-</body>
-
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/scrip.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
