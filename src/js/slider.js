@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.slider').slick({
+    $('.reviews').slick({
         arrows: false,
         dots: true,
         speed: 250,
