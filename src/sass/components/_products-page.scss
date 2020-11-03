@@ -11,9 +11,14 @@
     line-height: 1.667;
     color: $secondary-title-color;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.154;
+    }
     @media screen and (min-width: 1280px) {
       font-size: 30px;
       line-height: 1.333;
+      letter-spacing: 0.04em;
     }
   }
   h3 {
@@ -43,7 +48,13 @@
     }
   }
   h2 {
+    font-size: 34px;
+    letter-spacing: 0.04em;
     margin-bottom: 140px;
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.146;
+    }
 
     @media screen and (min-width: 1280px) {
       margin-bottom: 260px;
@@ -92,6 +103,12 @@
     position: relative;
     padding-top: 140px;
 
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 130px;
+      }
+    }
+
     @media screen and (min-width: 768px) {
       width: 220px;
       height: 485px;
@@ -103,10 +120,6 @@
       &:not(:last-child) {
         margin-right: 30px;
       }
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 130px;
     }
 
     &:nth-child(1) {
