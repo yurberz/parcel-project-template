@@ -861,7 +861,7 @@ header {
 }
 @media screen and (min-width: 1280px) {
   .hero__top {
-    padding-top: 171gipx;
+    padding-top: 171px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1384,14 +1384,14 @@ header {
     bottom: -20%;
     min-width: 480px;
     min-height: 200px;
-    background-image: url(/gallery-tablet.9eaa9852.jpg);
+    background-image: url(/gallery-tablet.66de5c5f.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url(/gallery-tablet@2x.f38aedc1.jpg);
+    background-image: url(/gallery-tablet@2x.17621471.png);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -1399,14 +1399,14 @@ header {
     bottom: -43.7%;
     min-width: 768px;
     min-height: 264px;
-    background-image: url(/gallery-tablet.9eaa9852.jpg);
+    background-image: url(/gallery-tablet.66de5c5f.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url(/gallery-tablet@2x.f38aedc1.jpg);
+    background-image: url(/gallery-tablet@2x.17621471.png);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1414,14 +1414,14 @@ header {
     bottom: -57.3%;
     min-width: 1280px;
     min-height: 430px;
-    background-image: url(/gallery-desk.38086934.jpg);
+    background-image: url(/gallery-desk.36603160.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url(/gallery-desk@2x.314e1d65.jpg);
+    background-image: url(/gallery-desk@2x.56235c7e.png);
   }
 }
 @media screen and (max-width: 479px) {
@@ -1429,14 +1429,14 @@ header {
     bottom: -15%;
     min-width: 320px;
     height: 122px;
-    background-image: url(/gallery-mobile.d53ca4ce.jpg);
+    background-image: url(/gallery-mobile.a28faea2.png);
     background-size: cover;
     background-position: center;
   }
 }
 @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
   .gallery {
-    background-image: url(/gallery-mobile@2x.d19b6ee9.jpg);
+    background-image: url(/gallery-mobile@2x.ee5994e1.png);
   }
 }
 
