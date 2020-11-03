@@ -557,7 +557,7 @@ header {
   }
   .drop-menu {
     top: -7px;
-    height: 502px;
+    height: 504px;
   }
 }
 
@@ -1784,6 +1784,12 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .locations__button {
+    margin-top: 54px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .locations__button {
     display: -webkit-box;
@@ -1949,19 +1955,16 @@ header {
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
           box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  height: 427px;
   padding-top: 43px;
   padding-bottom: 43px;
   margin-top: 0px;
   margin-bottom: 20px;
-  margin-right: 35px;
-  margin-left: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .locations__item:last-child {
-    margin-bottom: 54px;
-  }
+.locations__item:last-child {
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2322,7 +2325,6 @@ header {
   top: 347px;
   padding-right: 20px;
   padding-left: 21px;
-  margin-bottom: 43px;
 }
 
 @media screen and (min-width: 768px) {
