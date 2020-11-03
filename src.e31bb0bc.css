@@ -471,7 +471,7 @@ header {
   z-index: 7;
 }
 
-.drop-menu__item {
+.drop-menu__link {
   display: block;
   height: 42px;
   text-align: center;
@@ -483,7 +483,7 @@ header {
   color: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.drop-menu__item:hover, .drop-menu__item:focus {
+.drop-menu__link:hover, .drop-menu__link:focus {
   color: #d41443;
 }
 
@@ -528,7 +528,6 @@ header {
 
   .drop-menu {
     top: -7px;
-    height: 504px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -569,7 +568,6 @@ header {
     width: 280px;
     top: -37px;
     left: 490px;
-    height: 404px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -583,6 +581,9 @@ header {
 
   .top-menu__list {
     display: flex;
+  }
+
+  .top-menu__link {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -593,10 +594,10 @@ header {
     margin-right: 35px;
   }
 
-  .top-menu__item {
+  .top-menu__link {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .top-menu__item:hover, .top-menu__item:focus {
+  .top-menu__link:hover, .top-menu__link:focus {
     color: #d41443;
   }
 
@@ -725,6 +726,10 @@ header {
     line-height: 1.302;
     min-width: 63px;
     min-height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__btn_i-product {
     margin-right: 8px;
   }
 }
@@ -776,6 +781,10 @@ header {
     line-height: 1.305;
     min-width: 63px;
     min-height: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__btn_i-product {
     margin-right: 8px;
   }
 }
@@ -882,6 +891,10 @@ header {
     line-height: 1.286;
     min-width: 102px;
     min-height: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__btn_i-product {
     margin-right: 15px;
   }
 }
@@ -1263,13 +1276,9 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
-  .made__link {
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .made__right-side {
+  .made__wrapper {
     padding: 0 30px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1522,25 +1531,6 @@ header {
     left: 14%;
   }
 }
-.reviews__item:last-child::after {
-  position: absolute;
-  margin-top: 30px;
-  content: "";
-  width: 73px;
-  height: 12px;
-  transform: translateX(-50%);
-  background-image: url(/item3.802df7fd.png);
-}
-@media screen and (min-width: 768px) {
-  .reviews__item:last-child::after {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews__item:last-child::after {
-    margin-top: 35px;
-  }
-}
 .reviews__item:last-child::before {
   position: absolute;
   margin-top: -18px;
@@ -1641,6 +1631,11 @@ header {
 @media screen and (min-width: 1200px) {
   .locations__background {
     height: 102px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .locations__button {
+    margin-top: 54px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1780,18 +1775,15 @@ header {
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  height: 427px;
   padding-top: 43px;
   padding-bottom: 43px;
   margin-top: 0px;
   margin-bottom: 20px;
-  margin-right: 35px;
-  margin-left: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-@media screen and (max-width: 767px) {
-  .locations__item:last-child {
-    margin-bottom: 54px;
-  }
+.locations__item:last-child {
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .locations__item {
@@ -2105,7 +2097,6 @@ header {
   top: 347px;
   padding-right: 20px;
   padding-left: 21px;
-  margin-bottom: 43px;
 }
 @media screen and (min-width: 768px) {
   .locations__item__contacts {
@@ -2450,6 +2441,58 @@ header {
     width: 100%;
     line-height: 1.86;
   }
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin-right: 18px;
+}
+
+/* Активная точка */
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: D9D9D9;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  background-image: url("/house.fd529d93.svg");
+  background-size: 12px 12px;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
