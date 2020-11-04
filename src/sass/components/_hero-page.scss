@@ -34,7 +34,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #c7133e;
@@ -52,7 +52,7 @@
 
   background: $white-text-color;
   border-radius: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:hover,
   &:focus {
@@ -89,15 +89,16 @@
     padding-bottom: 160px;
     background-image: url(../images/hero/mobile-ice-min.png);
     background-position: right top 83px;
-  }
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url('../images/hero/mobile-ice@2x-min.png');
       background-size: 284px 419px;
     }
   }
+
   .hero__slogan {
     max-width: 218px;
     margin-bottom: 19px;
@@ -132,13 +133,14 @@
   .hero .container {
     padding-bottom: 34px;
   }
-  .hero {
+  .hero-container {
     background-image: url(../images/hero/tablet-girl-min.png),
       url(../images/hero/tablet-ice-min.png),
       url(../images/hero/tablet-milk-min.png);
     background-size: 168px 133px, 324px 368px, 124px 126px;
     background-position: right 34px bottom 0, right 145px bottom 0,
       left 34px bottom 28px;
+    background-repeat: no-repeat;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -236,13 +238,14 @@
   .hero .container {
     padding-bottom: 56px;
   }
-  .hero {
+  .hero-container {
     background-image: url(../images/hero/desctop-girl-min.png),
       url(../images/hero/desctop-ice-min.png),
       url(../images/hero/desctop-milk-min.png);
     background-size: 293px 232px, 538px 613px, 188px 191px;
     background-position: right 109px bottom 0, right 267px bottom 0,
       left 77px bottom 45px;
+    background-repeat: no-repeat;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
