@@ -9,6 +9,11 @@ header {
   width: 199px;
   height: 50;
 }
+
+.animate__tada {
+  animation-duration: 1.25s;
+}
+
 .drop-menu__order_btn,
 .top-menu__order_btn {
   cursor: pointer;
