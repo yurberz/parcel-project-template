@@ -405,6 +405,10 @@ header {
   height: 50;
 }
 
+.animate__tada {
+  animation-duration: 1.25s;
+}
+
 .drop-menu__order_btn,
 .top-menu__order_btn {
   cursor: pointer;
@@ -423,7 +427,7 @@ header {
   line-height: 1.132;
   text-align: center;
   color: #d41443;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .drop-menu__order_btn:hover, .drop-menu__order_btn:focus,
 .top-menu__order_btn:hover,
@@ -481,7 +485,7 @@ header {
   display: flex;
   align-items: center;
   color: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .drop-menu__link:hover, .drop-menu__link:focus {
   color: #d41443;
@@ -595,7 +599,7 @@ header {
   }
 
   .top-menu__link {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .top-menu__link:hover, .top-menu__link:focus {
     color: #d41443;
@@ -646,7 +650,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn_l-product:hover, .hero__btn_l-product:focus {
   background-color: #c7133e;
@@ -662,7 +666,7 @@ header {
   color: #d41443;
   background: #ffffff;
   border-radius: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .hero__btn_l-howto:hover, .hero__btn_l-howto:focus {
@@ -699,6 +703,7 @@ header {
     padding-bottom: 160px;
     background-image: url(/mobile-ice-min.1eeafb47.png);
     background-position: right top 83px;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -746,14 +751,15 @@ header {
     padding-bottom: 34px;
   }
 
-  .hero {
+  .hero-container {
     background-image: url(/tablet-girl-min.ac3bed08.png), url(/tablet-ice-min.8239fc61.png), url(/tablet-milk-min.61883f82.png);
     background-size: 168px 133px, 324px 368px, 124px 126px;
     background-position: right 34px bottom 0, right 145px bottom 0, left 34px bottom 28px;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-container {
     background-image: url(/tablet-girl@2x-min.4ec20bf9.png), url(/tablet-ice@2x-min.77d1d7e0.png), url(/tablet-milk@2x-min.e3f92cc2.png);
   }
 }
@@ -857,14 +863,15 @@ header {
     padding-bottom: 56px;
   }
 
-  .hero {
+  .hero-container {
     background-image: url(/desctop-girl-min.ca79a037.png), url(/desctop-ice-min.fc65544d.png), url(/desctop-milk-min.f9302020.png);
     background-size: 293px 232px, 538px 613px, 188px 191px;
     background-position: right 109px bottom 0, right 267px bottom 0, left 77px bottom 45px;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-container {
     background-image: url(/desctop-girl@2x-min.9432bdd0.png), url(/desctop-ice@2x-min.4ac27a10.png), url(/desctop-milk@2x-min.cbb10b6f.png);
   }
 }
@@ -1058,6 +1065,10 @@ header {
     justify-content: space-between;
   }
 }
+.products__link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .products__item {
   display: block;
   height: 450px;
@@ -1182,6 +1193,7 @@ header {
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .made__link:hover, .made__link:focus {
   background-color: #ecebeb;
@@ -1721,6 +1733,10 @@ header {
   border-radius: 22px;
   border: 1px solid transparent;
   cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.locations__franchise:hover, .locations__franchise:focus {
+  background: #ECEBEB;
 }
 @media screen and (min-width: 768px) {
   .locations__franchise {
@@ -1729,17 +1745,11 @@ header {
     font-size: 16px;
     padding-left: 38px;
   }
-  .locations__franchise:hover, .locations__franchise:focus {
-    background: #ECEBEB;
-  }
 }
 @media screen and (min-width: 1280px) {
   .locations__franchise {
     width: 180px;
     padding-left: 39px;
-  }
-  .locations__franchise:hover, .locations__franchise:focus {
-    background: #ECEBEB;
   }
 }
 .locations__franchise__svg {

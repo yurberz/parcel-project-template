@@ -117,21 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/slider.js":[function(require,module,exports) {
-$(document).ready(function () {
-  $('.reviews').slick({
-    arrows: false,
-    dots: true,
-    speed: 250,
-    easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
-    // inffinite: true,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-    draggable: true,
-    swipe: true,
-    touchTreshhold: 3,
-    touchMove: false
-  });
+})({"js/anchor.js":[function(require,module,exports) {
+$('a.scrollto').click(function () {
+  var elementClick = $(this).attr('href');
+  var destination = $(elementClick).offset().top;
+  jQuery('html:not(:animated),body:not(:animated)').animate({
+    scrollTop: destination
+  }, 500);
+  return false;
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -337,5 +330,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slider.js"], null)
-//# sourceMappingURL=/slider.d16eec5e.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/anchor.js"], null)
+//# sourceMappingURL=/anchor.e283a1c0.js.map
