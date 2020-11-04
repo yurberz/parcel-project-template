@@ -1894,6 +1894,12 @@ header {
   border-radius: 22px;
   border: 1px solid transparent;
   cursor: pointer;
+  -webkit-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.locations__franchise:hover, .locations__franchise:focus {
+  background: #ECEBEB;
 }
 
 @media screen and (min-width: 768px) {
@@ -1902,11 +1908,6 @@ header {
     height: 44px;
     font-size: 16px;
     padding-left: 38px;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .locations__franchise:hover, .locations__franchise:focus {
-    background: #ECEBEB;
   }
 }
 
@@ -1914,11 +1915,6 @@ header {
   .locations__franchise {
     width: 180px;
     padding-left: 39px;
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .locations__franchise:hover, .locations__franchise:focus {
-    background: #ECEBEB;
   }
 }
 
